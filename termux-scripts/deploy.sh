@@ -304,7 +304,7 @@ main() {
     download_autoglm
     install_autoglm
     download_hybrid_scripts
-    configure_grsai
+    configure_deepseekai
     create_launcher
     check_helper_app
     show_completion
