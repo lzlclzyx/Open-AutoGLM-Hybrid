@@ -193,7 +193,7 @@ EOF
     # 立即加载配置
     source ~/.autoglm/config.sh
     
-    print_success "GRS AI 配置完成"
+    print_success "DEEPSEEK AI 配置完成"
 }
 
 # 创建启动脚本
