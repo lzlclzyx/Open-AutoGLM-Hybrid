@@ -156,12 +156,12 @@ PYTHON_EOF
     print_success "混合方案脚本下载完成"
 }
 
-# 配置 GRS AI
-configure_grsai() {
-    print_info "配置 GRS AI..."
+# 配置 DEEPSEEK AI
+configure_deepseekai() {
+    print_info "配置 deepseek AI..."
     
     echo ""
-    echo "请输入您的 GRS AI API Key:"
+    echo "请输入您的 deepseek AI API Key:"
     read -p "API Key: " api_key
     
     if [ -z "$api_key" ]; then
@@ -174,10 +174,10 @@ configure_grsai() {
     cat > ~/.autoglm/config.sh << EOF
 #!/data/data/com.termux/files/usr/bin/bash
 
-# GRS AI 配置
-export PHONE_AGENT_BASE_URL="https://api.grsai.com/v1"
+# deepseek AI 配置
+export PHONE_AGENT_BASE_URL="https://api.deepseek.com/v1"
 export PHONE_AGENT_API_KEY="$api_key"
-export PHONE_AGENT_MODEL="gpt-4-vision-preview"
+export PHONE_AGENT_MODEL="deepseek-chat"
 
 # AutoGLM Helper 配置
 export AUTOGLM_HELPER_URL="http://localhost:8080"
